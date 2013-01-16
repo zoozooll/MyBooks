@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ccbooks.flip.BookLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/bookpagebg" android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<include layout="@layout/contenttop_horizontal"></include>
+	<LinearLayout android:id="@+id/lltContentFoot"
+		 android:layout_width="fill_parent" android:layout_height="wrap_content"
+		 android:layout_gravity = "bottom">
+		<SeekBar android:id="@+id/sbrMainContent"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"		
+			android:paddingLeft = "15dp" android:paddingRight="15dp"
+			android:progressDrawable="@drawable/content_seek"
+			android:thumb="@drawable/content_thumb"
+			android:max="10000"
+			></SeekBar>
+	</LinearLayout>
+
+</com.ccbooks.flip.BookLayout>

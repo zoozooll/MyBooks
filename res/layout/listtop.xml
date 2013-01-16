@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="wrap_content" android:background="@drawable/shelltop">
+	
+	<ImageView 
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:background="@drawable/shelltop_v" android:src="@drawable/shelltop_text"></ImageView> 
+
+	<Button android:textColor="@drawable/white" android:text="@string/bookstore"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="14sp" android:id="@+id/btnBookStore"
+		android:background="@drawable/btn_bookstore_style"
+		android:layout_marginLeft="9dp" android:layout_marginTop="3dp"
+		android:layout_alignParentLeft="true">
+	</Button>
+	
+	<Button android:text="更新" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/btnReflesh" android:background="@drawable/btn_bookstore_style"
+		android:layout_marginLeft="3dp" android:layout_marginTop="3dp"
+		android:textColor="@drawable/white" android:layout_toRightOf="@id/btnBookStore"></Button>
+		
+	<Button android:text="关于" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/btnAbout" android:background="@drawable/btn_bookstore_style"
+		android:layout_marginLeft="3dp" android:layout_marginTop="3dp"
+		android:textColor="@drawable/white" android:visibility="gone"
+		android:layout_toRightOf="@id/btnReflesh"></Button>
+
+	<Button android:text="@string/editbook" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="14sp" android:id="@+id/btnEdit" 
+		android:background="@drawable/outclickbutton"
+		android:layout_marginTop="3dp" android:layout_marginRight="9dp"
+		android:textColor="@drawable/white" android:layout_alignParentRight="true"></Button>
+
+	<Button android:id="@+id/btnBooklist"
+		android:background="@drawable/listoutclick" android:layout_marginTop="3dp"
+		android:layout_marginRight="3dp" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_toLeftOf="@id/btnEdit"
+		android:textColorHighlight="@drawable/yellow"></Button>
+		
+	<Button android:id="@+id/btnBookshelf"
+		android:background="@drawable/shelfoutclick" android:layout_marginTop="3dp"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:textColorHighlight="@drawable/yellow" android:layout_toLeftOf="@id/btnBooklist"></Button>
+
+</RelativeLayout>

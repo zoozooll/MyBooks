@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/menu_level_2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  	<include layout="@layout/fs_catalog" android:orientation="horizontal"
+		 />
+  	<include layout="@layout/fs_bkmk" android:orientation="horizontal"
+		 />
+  	<include layout="@layout/fs_turnto" android:orientation="horizontal"
+		 />
+  	<include layout="@layout/fs_setting" android:orientation="horizontal"
+		 />		 	
+	 <include layout="@layout/fs_contextual_model" android:orientation="horizontal"
+	 />			
+	<include layout="@layout/fs_comment" android:orientation="horizontal" 		 		 
+		/>
+</FrameLayout>

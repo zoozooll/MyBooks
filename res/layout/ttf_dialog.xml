@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="wrap_content"
+	android:orientation="vertical"
+	android:id="@+id/chardialog">
+	<LinearLayout 
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:background="@drawable/dialog_title_color"	
+		android:orientation="horizontal"
+		android:id="@+id/dialog">
+		<ImageView android:id="@+id/dialog" 
+			android:layout_margin="10dp"
+			android:layout_height="30dp"
+			android:layout_width="30dp"
+			android:background="@drawable/icon">
+		</ImageView>
+		<TextView 
+		android:layout_height="wrap_content"
+		android:textSize="24dp"
+		android:layout_marginTop="8dp"
+		android:layout_width="fill_parent"	
+		android:text="字体">
+		</TextView>	
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		
+		android:orientation="horizontal"
+		android:id="@+id/dialog">
+		<ListView
+	 		android:id="@+id/fontff_list"
+	 		android:background="@drawable/dialog_content_color"
+		  	android:layout_width="400dp"
+			android:layout_height="200dp" android:layout_weight="1"
+			android:cacheColorHint="@drawable/transparent" 
+			android:scrollbarStyle = "outsideInset"
+			android:paddingLeft="10dp"
+	  >
+	  </ListView>
+	</LinearLayout>
+	
+
+</LinearLayout>

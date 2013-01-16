@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/bookpagebg" android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" 
+	android:background="@drawable/book_page_bg_horizontal">
+	
+	
+	
+<LinearLayout
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="fill_parent" android:layout_weight="1">
+	
+	
+	<LinearLayout
+	android:layout_width="fill_parent" 
+	android:orientation="horizontal"
+	android:layout_height="100dp">
+    <Button android:text="书库" android:id="@+id/btnBookStore"
+		android:layout_width="wrap_content" android:layout_marginLeft="25dp"
+		android:background="@drawable/btn_catelog_top_style"
+		android:textSize = "16dp"
+		android:layout_marginTop="15dp" android:layout_height="wrap_content"
+		android:textColor="@drawable/content_title_color"></Button>
+
+
+	<Button android:text="续读" 
+	   android:id="@+id/btnLastread" android:layout_width="wrap_content"
+		android:background="@drawable/btn_catelog_top_style" android:textColor="@drawable/content_title_color"
+		android:layout_marginLeft="3dp" android:layout_marginTop="15dp"
+		android:textSize = "16dp"
+		android:layout_height="wrap_content"></Button>
+	</LinearLayout>	
+		
+		<TextView android:id="@+id/tvBookNameContent"
+		android:textColor="@drawable/content_title_color"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:textSize = "24dp"
+		android:maxLines = "4"
+		android:ellipsize = "end"
+		android:singleLine = "false"
+	    android:layout_marginTop="60dp"
+	    android:layout_gravity = "center"
+	    android:gravity = "center"
+		></TextView>
+		
+		<TextView android:id="@+id/tvBookAuthor" android:textColor="@drawable/content_title_color"
+		android:layout_width="300dp" 
+		android:gravity = "center"
+		android:layout_gravity = "center"
+		android:layout_height="wrap_content"
+		android:textSize = "16dp"
+		android:layout_marginTop="10dp"
+		android:text="作者：Unkown" 	
+		android:ellipsize="end"
+		></TextView>
+		
+		
+
+</LinearLayout>
+
+
+<LinearLayout
+	android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="fill_parent" android:layout_weight="1">
+	
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="410dp">
+		
+
+		<LinearLayout android:id="@+id/llyCatelogTitle"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:layout_marginLeft="30dp"
+			android:layout_marginRight="40dp" android:layout_marginTop="30dp"
+			android:orientation="vertical">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="horizontal" android:layout_height="40dp"
+				>
+
+				<Button android:text="目录" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/btnContentCatelog"
+					android:background="@drawable/bookcatalog_left_unselected"
+					android:layout_weight="1" android:layout_marginLeft="10dp"
+					android:textSize = "16dp"
+					android:layout_gravity="center" android:gravity="right|center_vertical"
+					android:paddingRight="45dp" android:textColor="@drawable/content_title_color">
+				</Button>
+	
+				<Button android:text="书签" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/btnContentMark"
+					android:background="@drawable/bookcatalog_right_selected"
+					android:layout_weight="1" android:layout_marginRight="10dp"
+					android:textSize = "16dp"
+					android:layout_gravity="center" android:gravity="left|center_vertical"
+					android:paddingLeft="45dp" android:textColor="@drawable/content_title_color">
+				</Button>
+
+			</LinearLayout>
+			
+			<Button android:id="@+id/btBack"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="返回上一级目录"
+			    android:visibility="invisible">
+			</Button>
+			
+			<ListView android:layout_width="fill_parent" android:id="@+id/lvCatalog"
+				android:layout_height="fill_parent" android:layout_weight="1"
+				android:scrollbarStyle = "outsideInset"
+				android:cacheColorHint="@drawable/transparent" android:layout_marginTop="25dp">
+				
+			</ListView>
+			
+			<TextView android:id="@+id/android:empty" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:textSize = "18dp"
+			android:textColor="@drawable/black" android:layout_marginTop="20dp"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+</LinearLayout>

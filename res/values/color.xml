@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="darkgray">#ff444444</drawable>
+	<drawable name="black">#ff000000</drawable>
+	<drawable name="red">#ffff0000</drawable>
+	<drawable name="green">#ff00ff00</drawable>
+	<drawable name="lightgray">#ffcccccc</drawable>
+	<drawable name="white">#ffffffff</drawable>
+	<drawable name="yellow">#ffffff00</drawable>
+	<drawable name="blue">#ff0000ff</drawable>
+	<drawable name="gray">#ff888888</drawable>
+	<drawable name="magenta">#ffff00ff</drawable>
+	<drawable name="cyan">#ff00ffff</drawable>
+	<drawable name="orange">#fff79e02</drawable>
+	<drawable name="grayblue">#ff52aaef</drawable>
+	<drawable name="transparent">#00000000</drawable>
+	<drawable name="trans">#00ffffff</drawable>
+	<drawable name="transpress">#21000000</drawable>
+	<drawable name="translucence">#e0000000</drawable>
+	<!--内容页书名，作者名颜色 -->
+	<drawable name="content_title_color">#623e00</drawable>
+	<drawable name="btn_ppressed_color">#88ffd200</drawable>
+	<!-- 新dialog的颜色 -->
+	<drawable name="dialog_title_color">#ff805015</drawable>
+	<drawable name="dialog_content_color">#ffecd681</drawable>
+	<drawable name="dialog_list_textcolor">#ffb9a052</drawable>
+</resources>

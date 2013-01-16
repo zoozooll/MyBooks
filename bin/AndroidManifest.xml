@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+	package="com.ccbooks.view" android:versionCode="61"
+	android:versionName="1.31">
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<activity android:name=".BookShelfView"
+			android:configChanges="orientation|keyboardHidden"
+			android:screenOrientation="unspecified" android:launchMode="singleInstance">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".BookListView" android:configChanges="orientation|keyboardHidden"
+			android:launchMode="singleInstance">
+		</activity>
+		<activity android:name=".BookContentView"
+			android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".TransitView" android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/*" android:scheme="file" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".BookCatalogView"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".TextReader" android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".BookContentView1"></activity>
+		<activity android:name=".BookHelpView" android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name="BookStoreView"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/bookstore" android:launchMode="singleInstance">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<data android:mimeType="text/txt"></data>
+			</intent-filter>
+		</activity>
+		<activity android:name=".CartoonReader"
+			android:configChanges="orientation|keyboardHidden|navigation"></activity>
+
+		<receiver android:name=".widget.CartoonWidget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+				<action android:name="a"></action>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/cartoon_appwidget"></meta-data>
+		</receiver>
+		<service android:name=".service.CartoonService">
+			<action android:name="a"></action>
+		</service>
+	</application>
+	<supports-screens android:largeScreens="true"
+		android:anyDensity="true" android:resizeable="true" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest> 

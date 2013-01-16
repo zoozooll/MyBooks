@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ccbooks.fullscreen.content.CommentView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/mCommentView"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+</com.ccbooks.fullscreen.content.CommentView>

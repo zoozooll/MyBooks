@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" android:layout_gravity="top"
+	android:id="@+id/bookContentLightDia" android:background="#807B6131">
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dp"
+		android:background="#80E7D7AD">
+
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_compass"></ImageView>
+
+		<TextView android:text="亮度" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:textSize="20sp" android:textColor="@drawable/content_title_color"
+			android:layout_gravity="left|center_vertical"
+			android:layout_marginLeft="10dp"></TextView>
+
+	</LinearLayout>
+
+	<SeekBar android:id="@+id/btnLightBar" android:layout_height="wrap_content"
+		android:layout_width="180dp" android:layout_gravity="center"
+		android:paddingLeft="10dp" android:paddingRight="10dp" android:max="255"
+		android:layout_marginBottom="40dp" android:layout_marginTop="20dp"></SeekBar>
+
+</LinearLayout>

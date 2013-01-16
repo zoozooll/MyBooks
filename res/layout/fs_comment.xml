@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/fun_comment"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:layout_gravity="center"
+  android:orientation="vertical"
+  android:visibility = "gone"
+  >
+ 
+  	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="@drawable/fs_markbg"
+		android:orientation="vertical"
+	>
+	
+			  <LinearLayout
+		  	  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:gravity="center"
+			  android:layout_weight="1"
+			  android:layout_gravity="center|top"
+			  android:layout_marginTop="10dp"
+			  android:orientation="horizontal">
+		  		<TextView
+				  	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:paddingTop="20dp"
+					android:layout_gravity="center"
+					android:textColor="#ffffff"
+					android:textSize="18dp"
+					android:text="批注">
+					</TextView>
+			</LinearLayout>
+	  	
+			<LinearLayout
+		  	  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:paddingRight="10dp"
+			  android:paddingLeft="10dp"
+			  android:paddingBottom="20dp"
+			  android:gravity="center"
+			  android:layout_weight="1"
+			  android:orientation="horizontal">
+			  	<LinearLayout
+			  	  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_weight="1"
+				  android:orientation="vertical">
+					 
+			  		<Button
+			  			android:id="@+id/deletebtn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:paddingTop="10dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:background="@drawable/fs_delete_currpage_comment_style">
+					</Button>
+					 <TextView
+					  	android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:layout_gravity="center"
+						android:textColor="#ffffff"
+						android:textSize="14dp"
+						android:text="删除本页批注">
+						</TextView>
+			  	</LinearLayout>
+			  	
+			  	<LinearLayout
+			  	  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_weight="1"
+				  android:orientation="vertical">
+					 
+			  		<Button
+			  			android:id="@+id/deleteallbtn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:background="@drawable/fs_delete_all_comment_style">
+					</Button>
+					 <TextView
+					  	android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:layout_gravity="center"
+						android:textColor="#ffffff"
+						android:textSize="14dp"
+						android:text="删除全部批注">
+						</TextView>
+			  	</LinearLayout>
+			  	
+			  	<LinearLayout
+			  	  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_weight="1"
+				  android:orientation="vertical">
+					  
+			  		<Button
+			  			android:id="@+id/colorpickerbtn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:paddingTop="10dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:background="@drawable/fs_color_setting_comment_style">
+					</Button>
+					<TextView
+					  	android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:layout_gravity="center"
+						android:textColor="#ffffff"
+						android:textSize="14dp"
+						android:text="批注颜色">
+						</TextView>
+			  	</LinearLayout>
+			  	
+			  	<LinearLayout
+			  	  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_weight="1"
+				  android:orientation="vertical">
+					  
+			  		<CheckBox
+						android:id="@+id/comment_check"
+						android:layout_width="88px"
+						android:layout_height="29px"
+						android:paddingTop="10dp"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:button="@drawable/checkbox_check_slide_style"
+						></CheckBox>
+					<TextView
+				  	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:layout_gravity="center"
+					android:textColor="#ffffff"
+					android:textSize="14dp"
+					android:text="批注开启">
+					</TextView>
+			  	</LinearLayout>
+			</LinearLayout>
+	
+	</LinearLayout>
+</LinearLayout>

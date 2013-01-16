@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/fltBookContent1"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bookpagebg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ScrollView android:layout_height="fill_parent" android:id="@+id/svView"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+			<TextView android:layout_height="fill_parent" android:id="@+id/tvMainContent"
+				android:layout_width="fill_parent"
+				android:textColor="@drawable/black" android:textSize="18sp"
+				android:padding="40dp" android:paddingTop="50dp"></TextView>
+		</ScrollView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/menuTop"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_gravity="top" android:background="#e07B4108"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="50dp">
+
+			<Button android:layout_width="wrap_content" android:text="书库"
+				android:layout_height="wrap_content" android:id="@+id/btnBookStore"
+				android:background="@drawable/content_btn_bg" android:textColor="@drawable/white"></Button>
+
+			<TextView android:id="@+id/tvBookNameContent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_weight="1" android:gravity="center"
+				android:textColor="@drawable/white" android:textSize="22sp"></TextView>
+
+			<TextView android:layout_width="wrap_content" android:text="0.0%"
+				android:layout_height="wrap_content" android:id="@+id/tvBookPercent"></TextView>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<SeekBar android:id="@+id/sbrMainContent" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginLeft="40dp"
+				android:layout_marginRight="40dp" android:paddingLeft="10dp" android:paddingRight="10dp"
+				android:layout_marginBottom="20dp"></SeekBar>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/menuButtom"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_gravity="bottom" android:background="#e07B4108"
+		android:layout_height="40dp">
+
+		<ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnBackColor" android:src="@drawable/daynight" android:layout_gravity="bottom"></ImageButton>
+
+		<ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnFontSize" android:src="@drawable/font" android:layout_gravity="bottom"></ImageButton>
+
+		<ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnBackLight" android:layout_gravity="bottom" android:fitsSystemWindows="true" android:src="@drawable/sunlight"></ImageButton>
+
+		<!--<ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnBookMark" android:src="@drawable/bookmark" android:layout_gravity="bottom"></ImageButton>
+
+		--><ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnBookCatalog" android:src="@drawable/toc" android:layout_gravity="bottom"></ImageButton>
+
+		<ImageButton android:layout_width="wrap_content" android:background="@drawable/transparent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/btnMore" android:src="@drawable/options" android:layout_gravity="bottom"></ImageButton>
+
+	</LinearLayout>
+</FrameLayout>

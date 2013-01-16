@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+<TextView  android:id="@+id/TextView01" 
+android:layout_width="fill_parent" 
+android:layout_height="5dp"></TextView>
+	
+<TableLayout android:id="@+id/TableLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+
+android:gravity="center_horizontal"
+>
+<TableRow android:id="@+id/TableRow01" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+>
+<!--<TextView  android:text=""
+
+android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+--><TextView  android:layout_weight="3"
+android:gravity="center_horizontal"
+android:id="@+id/magazinename" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+
+</TableRow>
+<TableRow android:id="@+id/TableRow03" 
+android:layout_width="fill_parent" 
+android:gravity="center_horizontal"
+android:layout_height="wrap_content">
+
+<TextView android:id="@+id/TextView04" 
+android:layout_width="wrap_content" 
+android:layout_height="5dp"></TextView>
+</TableRow>
+</TableLayout>
+<TableLayout android:id="@+id/TableLayout02"
+ android:layout_width="fill_parent"
+
+  android:layout_height="wrap_content">
+<TableRow android:id="@+id/TableRow02" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+
+>
+<TextView  android:id="@+id/progresstext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="7dp"></TextView>
+<ProgressBar android:id="@+id/myselfProgressBar"  android:max="100" android:layout_weight="10" android:paddingLeft="5dp" android:progressDrawable="@drawable/progress1"
+ style="?android:attr/progressBarStyleHorizontal"  android:layout_width="wrap_content" android:layout_height="27dp"></ProgressBar>
+<TextView android:id="@+id/TextView03" android:layout_width="5dp" android:layout_height="wrap_content"></TextView>
+
+
+<Button   android:id="@+id/pauseandbegan" android:layout_width="wrap_content" android:layout_height="28dp"  android:background="@drawable/star_icon_01" ></Button>
+
+<TextView  android:id="@+id/TextView02" android:layout_width="7dp" android:layout_height="wrap_content"></TextView>
+</TableRow>
+  </TableLayout>
+
+
+<TextView  android:id="@+id/TextView05" android:layout_width="fill_parent" android:layout_height="7dp"></TextView>
+</LinearLayout>
+

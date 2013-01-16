@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+	<ImageView android:layout_width="wrap_content" android:id="@+id/ImageView01"
+		android:layout_height="wrap_content" android:src="@drawable/content_mark"
+		android:layout_marginTop="3dp" />
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1">
+
+		<TextView android:id="@+id/tvChaptersTitle"
+			android:singleLine="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@drawable/black"
+			android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+			android:ellipsize="end" android:textSize="18sp"></TextView>
+
+		<TextView android:id="@+id/tvChapterDate" android:singleLine="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@drawable/black" android:layout_gravity="right|center"
+			android:layout_marginRight="10dp" android:textSize="12sp"></TextView>
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/tvChaptersPage"
+			android:layout_width="wrap_content" android:singleLine="true"
+			android:visibility="gone" android:textColor="@drawable/darkgray"
+			android:layout_marginTop="20dp"></TextView>
+
+		<TextView android:layout_height="wrap_content"
+			android:singleLine="true" android:layout_below="@+id/tvChaptersPage"
+			android:layout_width="wrap_content" android:id="@+id/tvChapterDate"
+			android:visibility="gone" android:textColor="@drawable/darkgray"></TextView>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/btnDelMark"
+			android:background="@drawable/btndelmark_style">
+		</ImageView>
+
+	</LinearLayout>
+</LinearLayout>

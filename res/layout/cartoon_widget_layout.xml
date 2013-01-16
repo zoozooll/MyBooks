@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="wrap_content">
+	<ImageButton android:src="@drawable/widget_face0"
+		android:id="@+id/ivFace" 
+		android:layout_height="120dp" android:layout_marginLeft="0dp"
+		android:layout_width="150dp" android:layout_alignParentLeft="true"
+		android:background="@drawable/transparent" android:scaleType="fitXY"
+		></ImageButton>
+	<ImageButton android:layout_height="120dp"
+		android:paddingBottom="20dp" android:layout_marginRight="20dp"
+		android:layout_width="200dp" android:background="@drawable/transparent"
+		android:id="@+id/ibWelcomeWord" android:src="@drawable/pop0"
+		android:layout_toRightOf="@id/ivFace" android:text="@string/welcomeWorld"
+		android:textColor="@drawable/white" 
+		android:scaleType="fitXY" android:padding="0dp"
+		></ImageButton>
+		
+	<TextView android:layout_width="150dp"  android:layout_height="80dp"
+		android:layout_toRightOf="@id/ivFace" android:layout_marginTop="30dp"
+		android:layout_marginLeft="40dp" android:text="@string/welcomeWorld"
+		android:textColor="@drawable/white" android:id="@+id/tvWelcomeWord"></TextView>
+	<ImageButton android:layout_alignParentLeft="true" android:id="@+id/ibEnterBookList"
+		android:layout_below="@id/ivFace" android:layout_width="100dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:background="@drawable/transparent"
+		android:scaleType="fitXY" android:padding="0dp"
+		android:src="@drawable/widget_btn0"></ImageButton>
+	<TextView android:layout_alignParentLeft="true"
+		android:layout_below="@id/ivFace" android:layout_width="100dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:text="进入书库"
+		android:textColor="@drawable/white" android:id="@+id/tvEnterBookList"
+		android:gravity="center"></TextView>
+	<ImageButton android:id="@+id/ibEnterLastRead"
+	 	android:layout_below="@id/ivFace" android:layout_width="200dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:text="欢迎来到CCBbook" 
+		android:layout_toRightOf="@id/ibEnterBookList" android:ellipsize="start"
+		android:textColor="@drawable/white" android:scaleType="fitXY"
+		android:padding="0dp" android:background="@drawable/transparent"
+		android:src="@drawable/widget_btn0"></ImageButton>
+	<TextView android:id="@+id/tvEnterLastRead"
+	 	android:layout_below="@id/ivFace" android:layout_width="200dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:text="欢迎来到CCBook" 
+		android:layout_toRightOf="@id/ibEnterBookList" android:ellipsize="marquee"
+		android:textColor="@drawable/white" android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:gravity="center" android:maxLines="2"></TextView>
+	<ImageButton android:id="@+id/ibEnterHistroy"
+		android:layout_below="@id/ivFace" android:layout_width="100dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:text="您已经看过"
+		android:layout_toRightOf="@id/ibEnterLastRead" android:padding="0dp"
+		android:textColor="@drawable/white" android:scaleType="fitXY"
+		android:background="@drawable/transparent" android:src="@drawable/widget_btn0"></ImageButton>
+	<TextView android:id="@+id/tvEnterHistroy"
+		android:layout_below="@id/ivFace" android:layout_width="100dp"
+		android:layout_height="70dp" android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp" android:text="您已经看过"
+		android:layout_toRightOf="@id/ibEnterLastRead" 
+		android:textColor="@drawable/white" android:gravity="center"></TextView>
+</RelativeLayout>

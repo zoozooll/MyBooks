@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/listtop_horizontal"></include>
+
+	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:background="@drawable/white" android:cacheColorHint="@drawable/white"></ListView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:background="@drawable/shellbuttom" android:gravity="center">
+		<Button android:text="@string/showAllList" android:id="@+id/btnShowAllList"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/onclickbutton_left" android:textColor="@drawable/white"></Button>
+		<Button android:text="@string/showSearch" android:id="@+id/btnShowSearch"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/outclickbutton_middle" android:textColor="@drawable/white"></Button>
+		<Button android:text="@string/showHistory" android:id="@+id/btnShowHistory"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/outclickbutton_right" android:textColor="@drawable/white"></Button>
+
+	</LinearLayout>
+</LinearLayout>
