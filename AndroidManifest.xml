@@ -3,7 +3,9 @@
 
 	package="com.ccbooks.view" android:versionCode="61"
 	android:versionName="1.31">
-
+	<uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
 	<application android:icon="@drawable/icon" android:label="@string/app_name"
 		android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 		<activity android:name=".BookShelfView"
@@ -61,7 +63,6 @@
 		android:anyDensity="true" android:resizeable="true" />
 
 	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
 	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
