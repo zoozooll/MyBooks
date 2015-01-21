@@ -2,6 +2,7 @@ package com.ccbooks.fullscreen.bookcore;
 
 
 import android.graphics.Paint;
+import android.os.Environment;
 
 import com.chinachip.books.plugin.PluginUtil;
 import com.chinachip.ccbooks.engine.Engine;
@@ -82,7 +83,7 @@ public class BookCore extends Engine {
 	}
 
 	public String getTempPath() {
-		String tempPath =  "/local/cctemp/";
+		String tempPath =  Environment.getDataDirectory().getPath() +"/cctemp/";
 		return tempPath;
 	}
 

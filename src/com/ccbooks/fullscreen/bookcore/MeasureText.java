@@ -50,7 +50,7 @@ public class MeasureText {
    
         
         
-        private void showText(String text, Paint.Align align) {
+       /* private void showText(String text, Paint.Align align) {
 
             float[] widths = new float[text.length()];
             int count = mPaint.getTextWidths(text, 0, text.length(), widths);
@@ -78,7 +78,7 @@ public class MeasureText {
         
             mPaint.setStrokeWidth(5);
         
-        }
+        }*/
         
         public float getCharWidth(String text) {
             
@@ -92,14 +92,14 @@ public class MeasureText {
         
         
         
-        public void test() {
+/*        public void test() {
        
           
         	getCharWidth("M");
        
          //wText("Text", Paint.Align.RIGHT);
      
-  }
+  }*/
 
 
 

@@ -246,7 +246,7 @@ public class BookShelfView extends ListActivity implements OnScrollListener {
 			pd = new Dialog(BookShelfView.this);
 			pd.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			pd.setContentView(R.layout.dia_loading);
-			FileBo fileUtil = new FileBo(BookShelfView.this, "/sdcard");
+			FileBo fileUtil = new FileBo(BookShelfView.this, "/sdcard/bluereader");
 			new Thread(fileUtil).start();
 			pd.setCancelable(false);
 			pd.show();

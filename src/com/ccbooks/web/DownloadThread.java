@@ -52,7 +52,7 @@ public class DownloadThread implements Runnable{
 		sendMessageToToast(ToastMessage.DOWNLOADSTAR,bookInfo.bookname+bookInfo.booktype.toLowerCase());
 		SingleThreadDown singleThread = null;
 		if(bookInfo.bookpath.indexOf("local")!= -1)
-			singleThread = new SingleThreadDown(bookInfo,"/local",context);
+			singleThread = new SingleThreadDown(bookInfo,"/sdcard",context);
 		else 
 			singleThread = new SingleThreadDown(bookInfo,context);
 		

@@ -56,7 +56,7 @@ public class CommentView extends View {
 	private boolean mIsLongPressed = false;
 	private Paint restorePaint;
 	
-	public static final String COMMENTPATH = "/local/cctemp/";
+	public static final String COMMENTPATH = "/sdcard/cctemp/";
 	  
 	private PointF globalPoint = new PointF();
 

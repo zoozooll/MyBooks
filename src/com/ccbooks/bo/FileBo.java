@@ -913,7 +913,7 @@ public class FileBo implements Runnable {
 		// TODO Auto-generated method stub
 		count = 0;
 		refreshSdFileList(firstPath);
-		refreshLocalFileList("/local");
+		//refreshLocalFileList("/local");
 		/*String chinachip = getRealData(CHINACHIP);
 		if(chinachip.equals("chinachip")){
 			refreshSdFileList(getRealData(SDCARD1));

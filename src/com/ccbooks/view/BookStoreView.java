@@ -338,9 +338,6 @@ public class BookStoreView extends Activity{
 				.canWrite()){
 			Log.i("BookStoreView", "BookStoreView sdcard can write");
 			book.bookpath="/sdcard/ccbook/" +book.bookname+book.booktype.toLowerCase();
-		}else{
-			book.bookpath="/local/ccbook/" +book.bookname+book.booktype.toLowerCase();
-			Log.i("BookStoreView", "BookStoreView sdcard can not write");
 		}
 		
 		book.downloadPrecent = 0;

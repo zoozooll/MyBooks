@@ -24,7 +24,7 @@ public class Font {
 	
 	public String sysPath = "/system/fonts/";
 	
-	public String userPath = "/local/cctemp/fonts/";
+	public String userPath = "/sdcard/cctemp/fonts/";
 	
 	ArrayList<FontListItem> fontListItem = null;
 	
@@ -84,6 +84,9 @@ public class Font {
 		for(int i = 0; i < listFile.length; i++){
 			fontItem = new FontListItem();
 			String filePath = listFile[i].getPath();
+			int begin = filePath.lastIndexOf("/");
+			int end =  filePath.lastIndexOf(".ttf");
+			if (begin == -1 || end == -1 || end <= begin) continue; 
 			String ttfName = filePath.substring(filePath.lastIndexOf("/")+1, filePath.lastIndexOf(".ttf"));
 			String rettfName = filePath.substring(filePath.lastIndexOf("/")+1, filePath.length());
 			if(sysFontMap.containsKey(ttfName)){

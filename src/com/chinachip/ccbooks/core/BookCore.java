@@ -120,7 +120,7 @@ public class BookCore extends Engine  {
 
 	public String getTempPath() {
 		
-		String tempPath =  "/local/cctemp/";
+		String tempPath =  "/sdcard/cctemp/";
 		return tempPath;
 		
 	}

@@ -36,7 +36,7 @@ public class HttpDownloader {
 			File resultFile=null;
 			FileUtils fileUtils;
 			if(context instanceof BookShelfView)
-				fileUtils = new FileUtils("/local");
+				fileUtils = new FileUtils("/sdcard");
 			else
 				fileUtils = new FileUtils();
 			if (fileUtils.isFileExist(fileName,path)) {

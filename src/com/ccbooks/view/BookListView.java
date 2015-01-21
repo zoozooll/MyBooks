@@ -306,7 +306,7 @@ public class BookListView extends ListActivity implements OnScrollListener {
 			pd.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			pd.setContentView(R.layout.dia_loading);
 			pd.setCancelable(false);
-			FileBo fileUtil = new FileBo(BookListView.this, "/sdcard");
+			FileBo fileUtil = new FileBo(BookListView.this, "/sdcard/bluereader");
 			new Thread(fileUtil).start();
 			pd.show();
 		}

@@ -130,11 +130,11 @@ public class CartoonReader extends Activity implements OnGestureListener {
 	
 
 	
-	public String imagePath = "/local/cctemp/";
+	public String imagePath = "/sdcard/cctemp/";
 	
-	public String imagePath11 = "/local/cctemp/image1.jpg";
+	public String imagePath11 = "/sdcard/cctemp/image1.jpg";
 	
-	public String imagePath21 = "/local/cctemp/image2.jpg";
+	public String imagePath21 = "/sdcard/cctemp/image2.jpg";
 	
 	public String ex = ".jpg";
 

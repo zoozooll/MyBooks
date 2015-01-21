@@ -47,20 +47,20 @@
      return ret;
    }
  
-   public float getWidth(String text)
+  /* public float getWidth(String text)
    {
      float w = mPaint.measureText(text, 0, text.length());
  
      return w;
-   }
+   }*/
  
-   public float[] getWidths(String text)
+   /*public float[] getWidths(String text)
    {
      float[] widths = new float[text.length()];
      int count = mPaint.getTextWidths(text, 0, text.length(), widths);
  
      return widths;
-   }
+   }*/
  
    public Paint getPaint()
    {

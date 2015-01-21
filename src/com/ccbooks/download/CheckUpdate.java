@@ -189,7 +189,7 @@ public class CheckUpdate {
 		System.out.println("filename:"+filename);
 		int Result = httpDownloader.downFile(url, path, filename,context);
 		if(Result == 1){
-			FileUtils fileUtils = new FileUtils("/local");
+			FileUtils fileUtils = new FileUtils("/sdcard");
 			fileUtils.delectFile(filename, path);
 			httpDownloader.downFile(url, path, filename,context);
 		}

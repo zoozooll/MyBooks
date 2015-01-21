@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
@@ -222,7 +223,7 @@ public class BookShelfView1 extends Activity {
 			pd = new Dialog(BookShelfView1.this);
 			pd.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			pd.setContentView(R.layout.dia_loading);
-			FileBo fileUtil = new FileBo(BookShelfView1.this, "/sdcard");
+			FileBo fileUtil = new FileBo(BookShelfView1.this, Environment.getExternalStorageDirectory().getPath() + "/bluereader");
 			new Thread(fileUtil).start();
 			pd.setCancelable(false);
 			pd.show();
